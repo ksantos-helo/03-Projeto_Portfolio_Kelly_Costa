@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Kelly Costa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <img src="anime.jpg" alt="Foto de Kelly Costa" class="profile-pic">
+      <h2>Kelly Costa</h2>
+      <p>Desenvolvedora Front-end em formação</p>
+      <p><strong>Oracle Next Education</strong> | Alura</p>
+    </div>
+
+    <div class="card-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/kellycristina-costa/" target="_blank" class="btn">
+        <span class="icon">💼</span> LinkedIn
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ksantos-helo" target="_blank" class="btn">
+        <span class="icon">💻</span> Portfólio GitHub
+      </a>
+
+      <!-- Certificações -->
+      <button class="btn" onclick="toggleDropdown()">
+        <span class="icon">📜</span> Certificações
+      </button>
+
+      <!-- Dropdown com cursos numerados -->
+      <div class="dropdown-content" id="certificados">
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-mergulhe-programacao-javascript/certificate" target="_blank">
+          Curso 1: Lógica de Programação – Mergulhe no JavaScript
+        </a>
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-funcoes-listas/certificate" target="_blank">
+          Curso 2: Lógica de Programação – Funções e Listas
+        </a>
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/git-github-compartilhando-colaborando-projetos/certificate" target="_blank">
+          Curso 3: Git e GitHub – Compartilhando Projetos
+        </a>
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-challenge-amigo-secreto/certificate" target="_blank">
+          Curso 4: Lógica de Programação – Challenge Amigo Secreto
+        </a>
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate" target="_blank">
+          Curso 5: IA – Explorando Inteligência Artificial Generativa
+        </a>
+        <a href="https://cursos.alura.com.br/user/ksantoshelo/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate" target="_blank">
+          Curso 6: Engenharia de Prompt – Criando Prompts Eficazes
+        </a>
+      </div>
+
+      <!-- E-mail -->
+      <a href="mailto:ksantoshelo@gmail.com" class="btn">
+        <span class="icon">📩</span> Contratar solução
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5511962299776" target="_blank" class="btn">
+        <span class="icon">💬</span> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("certificados");
+      dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>
