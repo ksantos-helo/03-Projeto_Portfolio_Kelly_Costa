@@ -12,16 +12,29 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch-start;
+  align-items: flex-start;
 }
 
-.apresentacao, .card {
+.card {
   background-color: #1e1e1e; /* blocos mais claros que o fundo */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
   max-width: 400px;
   flex: 1;
+  justify-content: center;  /* centraliza na vertical */
+  align-items: center;      /* centraliza na horizontal */
+  flex-direction: column;  /* mantém os elementos empilhados */
+}
+
+.apresentacao{
+  background-color: #1e1e1e; /* blocos mais claros que o fundo */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
+  max-width: 400px;
+  flex: 1;
+  display: flex; /* necessário para usar justify-content, align-items e flex-direction */
   justify-content: center;  /* centraliza na vertical */
   align-items: center;      /* centraliza na horizontal */
   flex-direction: column;  /* mantém os elementos empilhados */
@@ -41,9 +54,10 @@ body {
   color: #0A66C2; /* tom claro para detalhes */
 }
 
-.cargo
-{
-  font-size: 22px;
+.cargo {
+  font-size: 18px;
+  text-align: center;
+  width: 100%; /* ocupar toda a largura para que o text-align funcione */
 }
 
 .titulo-destaque {
