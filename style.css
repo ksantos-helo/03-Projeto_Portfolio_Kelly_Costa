@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   font-family: 'Roboto', sans-serif;  margin: 0;
   padding: 20px;
@@ -96,16 +98,18 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 10px;
+  padding: 10px 0 ;
   text-decoration: none;
   background-color: #2563eb; /* botão  */
-  color: #121212; /* texto escuro dentro do botão */
-  border-radius: 5px;
+  color: white; /* texto escuro dentro do botão */
+  border-radius: 16px;
+  font-size:  16px;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #32b4db; /* tom mais escuro no hover */
+  background-color: #22d4fd; /* tom mais escuro no hover */
+  color: black; 
 }
 
 .dropdown-content {
