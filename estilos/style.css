@@ -254,3 +254,10 @@ ul {
     flex-direction: column;
   }
 }
+
+.titulo_empresa
+{
+  color: #2563eb; /* tom claro para títulos */
+  margin-top: 20px;
+  font-size: 12px;
+}
