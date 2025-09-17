@@ -95,18 +95,23 @@ body {
 
 .card-header {
   text-align: center;
-  color: #e93ecc; /* destaque Cargo Atual */
+  color: white ; /* destaque Cargo Atual */
   font-size: 12px;
 }
 
 .profile-pic {
-  width: 50%;
-  height: auto;
-  border-radius: 60%; /* Para dar efeito oval se a imagem for quadrada */
-  object-fit: cover;
-  margin-bottom: 10px;
-  border: 3px solid #2563eb; /* contorno na cor do destaque */
+  width: 200px;
+  height: 200px;
+  object-fit: contain;          /* mostra a imagem inteira */
+  border-radius: 50%;            /* deixa circular */
+  border: 3px solid #00ffff;     /* borda colorida */
+  box-shadow: 0 0 10px #00ffff;  /* brilho ao redor */
+  background-color: #000;        /* fundo para as bordas vazias */
+  padding: 5px;                  /* espaço entre a borda e a imagem */
+  display: block;
+  margin: 0 auto;                /* centraliza */
 }
+
 
 
 .titulo_links {
@@ -193,29 +198,30 @@ ul {
   font-size: 14px;
 }
 
-/* Container dos dois blocos */
+.container_sobre_mim {
+  max-width: 1200px;      /* largura máxima centralizada */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .blocos-lado-a-lado {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;        /* permite quebrar em telas pequenas */
   gap: 40px;
-  flex-wrap: nowrap; /* impede quebra para baixo */
   margin-top: 30px;
-  padding: 2% 15% 0% 0%;
 }
 
-/* Blocos lado a lado */
 .bloco {
-  flex: 0 0 100%;     /* fixa cada bloco em 100% da largura */
-  /* background-color: #1e1e1e; */
+  flex: 1;                 /* cada bloco ocupa o espaço disponível igualmente */
+  min-width: 300px;        /* garante tamanho mínimo confortável */
   padding: 20px;
   border-radius: 12px;
-  box-sizing: border-box;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+  background-color: #1e1e1e;
+  box-sizing: border-box;
 }
 
-/* Estilo das listas dentro dos blocos */
 .bloco ul {
   list-style: none;
   padding: 0;
@@ -223,7 +229,7 @@ ul {
 }
 
 .bloco li {
-  width: 100%; /* ocupa toda a largura disponível */
+  width: 100%;
   padding: 20px 24px;
   margin-bottom: 16px;
   border: 1px solid #00ffff;
@@ -234,34 +240,17 @@ ul {
   display: block;
 }
 
-/* Títulos dos blocos */
-.blocos-lado-a-lado h4 {
-  color: #00ffff;
-  text-align: center;
-  margin-bottom: 20px;
+/* aumenta os <li> quando a tela for grande */
+@media (min-width: 900px) {
+  .bloco li {
+    font-size: 1.2rem;
+    padding: 28px;
+  }
 }
 
-/* Estilo do destaque */
-.destaque {
-  font-weight: bold;
-  color: #00ffff;
+/* em telas menores, empilha os blocos */
+@media (max-width: 700px) {
+  .blocos-lado-a-lado {
+    flex-direction: column;
+  }
 }
-
-.apresentacao_sobre_mim {
-  font-family: 'Roboto', sans-serif;  
-  font-weight: 400;
-  font-style: normal; 
-  /* background-color: #1e1e1e; blocos mais claros que o fundo */
-  padding: 20px;
-  margin-bottom: 40px; /* separa o menu da imagem */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
-  max-width: 400px;
-  flex: 1;
-  display: flex; /* necessário para usar justify-content, align-items e flex-direction */
-  justify-content: center;  /* centraliza na vertical */
-  align-items: center;      /* centraliza na horizontal */
-  flex-direction: column;  /* mantém os elementos empilhados */
-
-}
-
