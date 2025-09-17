@@ -4,66 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil Kelly Costa</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./estilos/style.css">
 </head>
 <body>
-  <!-- Container principal com card + apresentação lado a lado -->
-  <div class="container">
-    <!-- Card de perfil à esquerda -->
-    <div class="card">
+  
+  <!-- Cabeçalho da página -->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link"  href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+  <!-- Conteúdo principal -->
+  <main class="container">
+    
+    <!-- Card de perfil -->
+    <aside class="card">
       <div class="card-header">
-        <img src="anime.jpg" alt="Foto de Kelly Costa" class="profile-pic">
+        <img src="./assets/anime.jpg" alt="Foto de Kelly Costa" class="profile-pic">
         <h2>Kelly Costa</h2>
-        <p>Desenvolvedora <strong class="titulo-destaque">Front-end</strong> em formação</p>
-        <p><strong class="titulo-educacao">Oracle Next Education</strong> | Alura</p>
+        <p>
+          Desenvolvedora <strong class="titulo-destaque">Front-end</strong> em formação<br>
+          <strong class="titulo-educacao">Oracle Next Education</strong> | Alura
+        </p>
       </div>
 
-      <div class="card-buttons">
-        <a href="https://www.linkedin.com/in/kellycristina-costa/" target="_blank" class="btn">💼 LinkedIn</a>
-        <a href="https://github.com/ksantos-helo" target="_blank" class="btn">💻 Portfólio GitHub</a>
-        <button class="btn" onclick="toggleDropdown()">📜 Certificações</button>
+      <!-- Botões e subtítulo centralizados -->
+      <nav class="card-buttons">
+        <h2 class="titulo_links">
+          🔗 Acesse minhas redes sociais<br>
+          🏅 Explore meus certificados
+        </h2>
+        <a href="https://www.linkedin.com/in/kellycristina-costa/" target="_blank" class="btn"> 
+          <img src="./assets/linkedin.png"> 
+          LinkedIn
+        </a>
+        <a href="https://github.com/ksantos-helo" target="_blank" class="btn">
+          <img src="./assets/github.png"> 
+          GitHub
+        </a>
+        <button class="btn" onclick="toggleDropdown()">
+        🏅Certificações
+        </button>
         <div class="dropdown-content" id="certificados">
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-mergulhe-programacao-javascript/certificate" target="_blank">Curso 1: Lógica de Programação – Mergulhe no JavaScript</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-funcoes-listas/certificate" target="_blank">Curso 2: Lógica de Programação – Funções e Listas</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/git-github-compartilhando-colaborando-projetos/certificate" target="_blank">Curso 3: Git e GitHub – Compartilhando Projetos</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-challenge-amigo-secreto/certificate" target="_blank">Curso 4: Lógica de Programação – Challenge Amigo Secreto</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate" target="_blank">Curso 5: IA – Explorando Inteligência Artificial Generativa</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate" target="_blank">Curso 6: Engenharia de Prompt – Criando Prompts Eficazes</a>
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-ambiente-arquivos-tags/certificate" target="_blank">Curso 7: HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</a>
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-mergulhe-programacao-javascript/certificate" target="_blank">Curso 1: Lógica de Programação – Mergulhe no JavaScript</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-funcoes-listas/certificate" target="_blank">Curso 2: Lógica de Programação – Funções e Listas</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/git-github-compartilhando-colaborando-projetos/certificate" target="_blank">Curso 3: Git e GitHub – Compartilhando Projetos</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-challenge-amigo-secreto/certificate" target="_blank">Curso 4: Lógica de Programação – Challenge Amigo Secreto</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate" target="_blank">Curso 5: IA – Explorando Inteligência Artificial Generativa</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate" target="_blank">Curso 6: Engenharia de Prompt – Criando Prompts Eficazes</a> 
+          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-ambiente-arquivos-tags/certificate" target="_blank">Curso 7: HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</a> 
           <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-classes-posicionamento-flexbox/certificate" target="_blank">Curso 8: HTML e CSS: Classes, posicionamento e Flexbox</a>
         </div>
-        <a href="mailto:ksantoshelo@gmail.com" class="btn">📩 Contratar solução</a>
-        <a href="https://wa.me/5511962299776" target="_blank" class="btn">💬 WhatsApp</a>
-      </div>
-    </div>
+      </nav>
+    </aside>
 
-    <!-- Seção de apresentação à direita -->
-    <section class="apresentacao">
-      <h2><strong class="cargo">Especialista em Dados | BI & Analytics</strong>
-      <strong class="empresa">@Grupo Boticário</strong>
-      </h2>
-      <h3>Áreas de Atuação</h3>
-      <ul>
-        <li>🚀 <span class="destaque">Gestão de Portfólio & Estratégia:</span> <br> Visão, roadmap e governança; otimização de trade-offs com modelagem quantitativa (RICE); alinhamento aos objetivos de negócio.</li>
-       
-        <li>👥 <span class="destaque">Liderança Data-Driven & Desenvolvimento de Talentos:</span> <br> Mentoria de times para visão de produto e fluência em dados; integração entre Negócio, Contabilidade e Tecnologia.</li>
-       
-        <li>📈 <span class="destaque">Arquitetura de Métricas & Alinhamento Executivo:</span> <br> Criação de frameworks de métricas (North Star, KPIs) para visibilidade do valor gerado e comunicação à liderança.</li>
-      </ul>
+  </main>
 
-      <h3>Competências</h3>
-      <ul>
-        <li>🧠 <span class="destaque">Estratégia & Produto:</span> <br> Gestão de produtos, roadmap, liderança de squads, análise de negócios, UX</li>
-       
-        <li>📈 <span class="destaque">Dados & Tomada de Decisão:</span> <br> Análise financeira, relatórios, contabilidade gerencial, estatística</li>
-        
-        <li>🛠️ <span class="destaque">Execução & Melhoria Contínua:</span> <br> Planejamento em Sprint, Agile/Scrum, governança, 5S, resolução de problemas</li>
-       
-        <li>🤝 <span class="destaque">Liderança & Comunicação:</span> <br> Gestão de equipes, comunicação eficaz, apresentações</li>
-      </ul>
-
-    </section>
-  </div>
+  <!-- Rodapé -->
+  <footer class="rodape">  
+    <p> Desenvolvido por <strong>Kelly Costa</strong> &copy; 2025</p>
+  </footer>
 
   <script>
     function toggleDropdown() {
@@ -71,5 +72,6 @@
       dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
     }
   </script>
+
 </body>
 </html>

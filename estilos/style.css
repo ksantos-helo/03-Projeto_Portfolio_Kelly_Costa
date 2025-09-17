@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;  
+  margin: 0;
+  padding: 20px;
+  background-color: #000000; /* fundo preto escuro */
+  color: #eeeeee; /* cor do texto clara */
+  line-height: 1.6; /* melhora a leitura */
+  text-align: left; 
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    margin-bottom: 40px; /* separa o menu da imagem */
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.container {
+  display: flex;
+  padding: 2% 0% 0% 15%;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start ;
+  align-items: stretch;
+}
+
+.card {
+  /* background-color: #1e1e1e; blocos mais claros que o fundo */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
+  max-width: 400px;
+  flex: 1;
+  justify-content: center;  /* centraliza na vertical */
+  align-items: center;      /* centraliza na horizontal */
+  flex-direction: column;  /* mantém os elementos empilhados */
+}
+
+.apresentacao{
+  /* background-color: #1e1e1e; blocos mais claros que o fundo */
+  padding: 20px;
+  margin-bottom: 40px; /* separa o menu da imagem */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
+  max-width: 400px;
+  flex: 1;
+  display: flex; /* necessário para usar justify-content, align-items e flex-direction */
+  justify-content: center;  /* centraliza na vertical */
+  align-items: center;      /* centraliza na horizontal */
+  flex-direction: column;  /* mantém os elementos empilhados */
+}
+
+.apresentacao h2 {
+  margin-top: 0;
+  font-style: italic;
+  color: #e93ecc; /* destaque Cargo Atual */
+}
+
+.empresa {
+  display: block;
+  font-style: italic;
+  font-size: 0.6em; /* menor que o título */
+  margin-top: 4px;
+  color: #0A66C2; /* tom claro para detalhes */
+}
+
+.cargo {
+  font-size: 18px;
+  text-align: center;
+  width: 100%; /* ocupar toda a largura para que o text-align funcione */
+}
+
+.titulo-destaque {
+  color: #e93ecc; /* tom claro para títulos */
+  margin-top: 20px;
+}
+
+.titulo-educacao
+{
+  color: #2563eb; /* tom claro para títulos */
+  margin-top: 20px;
+}
+
+.card-header {
+  text-align: center;
+  color: #e93ecc; /* destaque Cargo Atual */
+  font-size: 12px;
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
+  border-radius: 60%; /* Para dar efeito oval se a imagem for quadrada */
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #2563eb; /* contorno na cor do destaque */
+}
+
+
+.titulo_links {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 400;
+  font-style: normal; 
+  line-height: 1.4;
+  text-align: center;  /* funciona melhor agora */
+  width: 100%;         /* ocupa toda a largura do container */
+  font-size: 14px; /* menor que o título */
+  margin-top: 4px;
+  color: white; /* tom claro para detalhes */
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px 0;
+  
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 14px 0 ;
+  text-decoration: none;
+  color: white; /*texto escuro dentro do botão */
+  border-radius: 16px;
+  font-size:  16px;
+  transition: background-color 0.3s;
+  border: 2px solid #22D4FD; /*borda azul clara botão*/
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #2563eb; /* tom mais escuro no hover */
+  color: black; 
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  background-color: #2a2a2a; /* fundo do dropdown escuro */
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.dropdown-content a:hover {
+  background-color: #2563eb; /* tom mais escuro no hover */
+
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* controla o espaço entre os itens */
+}
+
+.destaque {
+  font-weight: bold;
+  color: #2563eb; 
+}
+
+
+.rodape {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 1px solid #444; /* linha de separação */
+  color: #888; /* cor mais clara para o texto do rodapé */
+  font-size: 14px;
+}
+
+/* Container dos dois blocos */
+.blocos-lado-a-lado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* impede quebra para baixo */
+  margin-top: 30px;
+  padding: 2% 15% 0% 0%;
+}
+
+/* Blocos lado a lado */
+.bloco {
+  flex: 0 0 100%;     /* fixa cada bloco em 100% da largura */
+  /* background-color: #1e1e1e; */
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+}
+
+/* Estilo das listas dentro dos blocos */
+.bloco ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloco li {
+  width: 100%; /* ocupa toda a largura disponível */
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  background-color: #121212;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Títulos dos blocos */
+.blocos-lado-a-lado h4 {
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo do destaque */
+.destaque {
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.apresentacao_sobre_mim {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 400;
+  font-style: normal; 
+  /* background-color: #1e1e1e; blocos mais claros que o fundo */
+  padding: 20px;
+  margin-bottom: 40px; /* separa o menu da imagem */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
+  max-width: 400px;
+  flex: 1;
+  display: flex; /* necessário para usar justify-content, align-items e flex-direction */
+  justify-content: center;  /* centraliza na vertical */
+  align-items: center;      /* centraliza na horizontal */
+  flex-direction: column;  /* mantém os elementos empilhados */
+
+}
+
