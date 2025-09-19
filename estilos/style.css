@@ -38,13 +38,19 @@ body {
     text-decoration: none;
 }
 
-.container {
+.apresentacao {
   display: flex;
   padding: 2% 0% 0% 15%;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: flex-start ;
   align-items: stretch;
+  margin-bottom: 40px; /* separa o menu da imagem */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
+  max-width: 400px;
+  flex: 1;
+  flex-direction: column;  /* mantém os elementos empilhados */
 }
 
 .card {
@@ -59,19 +65,6 @@ body {
   flex-direction: column;  /* mantém os elementos empilhados */
 }
 
-.apresentacao{
-  /* background-color: #1e1e1e; blocos mais claros que o fundo */
-  padding: 20px;
-  margin-bottom: 40px; /* separa o menu da imagem */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
-  max-width: 400px;
-  flex: 1;
-  display: flex; /* necessário para usar justify-content, align-items e flex-direction */
-  justify-content: center;  /* centraliza na vertical */
-  align-items: center;      /* centraliza na horizontal */
-  flex-direction: column;  /* mantém os elementos empilhados */
-}
 
 .apresentacao h2 {
   margin-top: 0;
@@ -133,8 +126,14 @@ body {
   text-align: center;  /* funciona melhor agora */
   width: 100%;         /* ocupa toda a largura do container */
   font-size: 1rem; /* menor que o título */
-  margin-top: 4px;
-  color: var(--cor-secundaria); /* tom claro para detalhes */
+  color: var(--cor-secundaria) !important; /* tom claro para detalhes */
+  margin-top: 20px;        /* distância do elemento acima */
+  margin-bottom: 4px;     /* distância para o elemento abaixo */
+  margin:0;
+  }
+
+nav .titulo_links {
+  color: var(--cor-secundaria);
 }
 
 .card-buttons {
@@ -145,7 +144,7 @@ body {
   margin-top: 15px;
   width: 100%;
   padding: 14px 0;
-  
+  color: var(--cor-secundaria);
 }
 
 .btn {
@@ -268,7 +267,7 @@ ul {
   font-size: 1rem;
   box-sizing: border-box;
   display: block;
-  transition: background-color var(--cor-terciaria), color 0.3s; /* animação suave */
+  transition: background-color 0.3s ease, color 0.3s ease;/* animação suave */
   cursor: pointer; /* muda o cursor para indicar que é interativo */
 }
 
@@ -287,9 +286,22 @@ ul {
 
 /* em telas menores, empilha os blocos */
 @media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
   .blocos-lado-a-lado {
     flex-direction: column;
   }
+
+   .apresentacao__conteudo {
+        width: auto;
+    }
 }
 
 .titulo_empresa
