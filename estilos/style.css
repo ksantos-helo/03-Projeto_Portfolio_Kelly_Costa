@@ -32,7 +32,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -88,7 +88,7 @@ body {
 }
 
 .cargo {
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
   width: 100%; /* ocupar toda a largura para que o text-align funcione */
 }
@@ -107,7 +107,7 @@ body {
 .card-header {
   text-align: center;
   color:var(--cor-secundaria) ; /* destaque Cargo Atual */
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .profile-pic {
@@ -132,7 +132,7 @@ body {
   line-height: 1.4;
   text-align: center;  /* funciona melhor agora */
   width: 100%;         /* ocupa toda a largura do container */
-  font-size: 14px; /* menor que o título */
+  font-size: 1rem; /* menor que o título */
   margin-top: 4px;
   color: var(--cor-secundaria); /* tom claro para detalhes */
 }
@@ -157,7 +157,7 @@ body {
   text-decoration: none;
   color:var(--cor-secundaria); /*texto escuro dentro do botão */
   border-radius: 16px;
-  font-size:  16px;
+  font-size:  1rem;
   transition: background-color 0.3s;
   border: 2px solid var(--cor-terciaria); /*borda azul clara botão*/
   background-color: transparent;
@@ -182,7 +182,7 @@ body {
   padding: 8px 12px;
   background-color: var(--cor-quintaria); /* fundo do dropdown escuro */
   color: var(--cor-secundaria); /* cor do texto */
-  font-size: 14px;
+  font-size: 1rem;
   padding: 5px;
   border-radius: 12px;
   text-decoration: none;
@@ -225,7 +225,7 @@ ul {
   margin-top: 20px;
   border-top: 1px solid #444; /* linha de separação */
   color: #888; /* cor mais clara para o texto do rodapé */
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .container_sobre_mim {
@@ -280,7 +280,7 @@ ul {
 /* aumenta os <li> quando a tela for grande */
 @media (min-width: 900px) {
   .bloco li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 28px;
   }
 }
@@ -296,5 +296,5 @@ ul {
 {
   color:var(--cor-quintaria); /* tom claro para títulos */
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 1rem;
 }
