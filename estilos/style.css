@@ -75,7 +75,7 @@ body {
     width: 180px;
     height: 180px;
     object-fit: cover; /* preenche o círculo */
-    object-position: 50% 10%;; /* ponto focal no centro (padrão) */
+    object-position: 50% 7%;; /* ponto focal no centro (padrão) */
     border-radius: 50%;
     border: 4px solid #22D4FD; /* contorno neon */
     box-shadow: 0 0 20px #22D4FD; /* glow mais intenso */
