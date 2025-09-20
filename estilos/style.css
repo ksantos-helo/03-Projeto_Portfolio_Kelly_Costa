@@ -9,20 +9,20 @@
     --cor-hover: #2a2a2a;      /* tom mais escuro usado no hover de botões e links */
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif;  
-  margin: 0;
-  padding: 20px;
-  background-color: var(--cor-primaria); /* fundo preto escuro */
-  color: var(--cor-secundaria); /* cor do texto clara */
-  line-height: 1.6; /* melhora a leitura */
-  text-align: left; 
+    font-family: 'Roboto', sans-serif;  
+    margin: 0;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+    text-align: left; 
 }
 
+/* Cabeçalho */
 .cabecalho {
-    padding: 2% 0% 0% 15%;
-    margin-bottom: 40px; /* separa o menu da imagem */
+    padding: 2% 0 0 15%;
+    margin-bottom: 40px;
 }
 
 .cabecalho__menu {
@@ -38,275 +38,276 @@ body {
     text-decoration: none;
 }
 
+/* Conteúdo principal */
 .apresentacao {
-  display: flex;
-  padding: 2% 0% 0% 15%;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: flex-start ;
-  align-items: stretch;
-  margin-bottom: 40px; /* separa o menu da imagem */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
-  max-width: 400px;
-  flex: 1;
-  flex-direction: column;  /* mantém os elementos empilhados */
+    display: flex;
+    padding: 2% 0 0 15%;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    max-width: 400px;
+    flex: 1;
+    flex-direction: column;
 }
 
 .card {
-  /* background-color: #1e1e1e; blocos mais claros que o fundo */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* sombra mais visível no fundo escuro */
-  max-width: 400px;
-  flex: 1;
-  justify-content: center;  /* centraliza na vertical */
-  align-items: center;      /* centraliza na horizontal */
-  flex-direction: column;  /* mantém os elementos empilhados */
-}
-
-
-.apresentacao h2 {
-  margin-top: 0;
-  font-style: italic;
-  color: var(--cor-quartaria); /* destaque Cargo Atual */
-}
-
-.empresa {
-  display: block;
-  font-style: italic;
-  font-size: 0.6em; /* menor que o título */
-  margin-top: 4px;
-  color: var(--cor-quintaria); /* tom claro para detalhes */
-}
-
-.cargo {
-  font-size: 1rem;
-  text-align: center;
-  width: 100%; /* ocupar toda a largura para que o text-align funcione */
-}
-
-.titulo-destaque {
-  color: var(--cor-quartaria); /* tom claro para títulos */
-  margin-top: 20px;
-}
-
-.titulo-educacao
-{
-  color: var(--cor-quintaria); /* tom claro para títulos */
-  margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    max-width: 400px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card-header {
-  text-align: center;
-  color:var(--cor-secundaria) ; /* destaque Cargo Atual */
-  font-size: 1rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 1rem;
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;          /* mostra a imagem inteira */
-  border-radius: 50%;            /* deixa circular */
-  border: 3px solid var(--cor-terciaria);     /* borda colorida */
-  box-shadow: 0 0 10px var(--cor-terciaria);  /* brilho ao redor */
-  background-color: var(--cor-primaria);        /* fundo para as bordas vazias */
-  padding: 5px;                  /* espaço entre a borda e a imagem */
-  display: block;
-  margin: 0 auto;                /* centraliza */
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid var(--cor-terciaria);
+    box-shadow: 0 0 10px var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Títulos e destaques */
+.apresentacao h2 {
+    margin-top: 0;
+    font-style: italic;
+    color: var(--cor-quartaria);
+}
 
+.titulo-destaque {
+    color: var(--cor-quartaria);
+    margin-top: 20px;
+}
+
+.titulo-educacao {
+    color: var(--cor-quintaria);
+    margin-top: 20px;
+}
 
 .titulo_links {
-  font-family: 'Roboto', sans-serif;  
-  font-weight: 400;
-  font-style: normal; 
-  line-height: 1.4;
-  text-align: center;  /* funciona melhor agora */
-  width: 100%;         /* ocupa toda a largura do container */
-  font-size: 1rem; /* menor que o título */
-  color: var(--cor-secundaria) !important; /* tom claro para detalhes */
-  margin-top: 20px;        /* distância do elemento acima */
-  margin-bottom: 4px;     /* distância para o elemento abaixo */
-  margin:0;
-  }
-
-nav .titulo_links {
-  color: var(--cor-secundaria);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--cor-secundaria) !important;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .card-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-  width: 100%;
-  padding: 14px 0;
-  color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    padding: 14px 0;
+    color: var(--cor-secundaria);
 }
 
+/* Botões */
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 14px 0 ;
-  text-decoration: none;
-  color:var(--cor-secundaria); /*texto escuro dentro do botão */
-  border-radius: 16px;
-  font-size:  1rem;
-  transition: background-color 0.3s;
-  border: 2px solid var(--cor-terciaria); /*borda azul clara botão*/
-  background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 14px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border: 2px solid var(--cor-terciaria);
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--cor-hover); /* tom mais escuro no hover */
-  color:var(--cor-primaria); 
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+/* Dropdown */
+.dropdown-wrapper {
+    width: 100%;
+}
+
+.dropdown-check {
+    display: none;
+}
+
+label.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 14px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border: 2px solid var(--cor-terciaria);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+label.btn:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
 }
 
 .dropdown-content {
-  display: none;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 5px;
-  width: 100%; /* ocupa toda a largura do container pai */
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+    width: 100%;
 }
 
 .dropdown-content a {
-  display: block;           /* deixa flexível para o span interno */
-  width: 100%;               /* ocupa toda a largura do dropdown */
-  padding: 8px 12px;
-  background-color: var(--cor-quintaria); /* fundo do dropdown escuro */
-  color: var(--cor-secundaria); /* cor do texto */
-  font-size: 1rem;
-  padding: 5px;
-  border-radius: 12px;
-  text-decoration: none;
-  box-sizing: border-box;
-  margin-bottom: 5px; /* separação extra opcional */
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--cor-quintaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-bottom: 5px;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--cor-hover); /* tom mais escuro no hover */
-  color: var(--cor-terciaria);
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
 }
 
-/* Estilo do número e do nome do curso */
+/* Dropdown visível quando checkbox marcado */
+#certificadosProgramacao:checked ~ .dropdown-content,
+#certificadosPessoal:checked ~ .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Estilo curso */
 .curso-numero {
-  font-weight: bold;
-  color: var(--cor-secundaria);
-  margin-right: 8px; /* espaço entre número e nome */
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-right: 8px;
 }
 
 .curso-nome {
-  color: var(--cor-secundaria);
-  word-break: break-word; /* evita que textos longos quebrem o layout */
+    color: var(--cor-secundaria);
+    word-break: break-word;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* controla o espaço entre os itens */
-}
-
-.destaque {
-  font-weight: bold;
-  color: var(--cor-quintaria); 
-}
-
-
+/* Rodapé */
 .rodape {
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-  border-top: 1px solid #444; /* linha de separação */
-  color: #888; /* cor mais clara para o texto do rodapé */
-  font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    color: #888;
+    font-size: 1rem;
 }
 
+/* Blocos de conteúdo */
 .container_sobre_mim {
-  max-width: 1200px;      /* largura máxima centralizada */
-  margin: 0 auto;
-  padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .blocos-lado-a-lado {
-  display: flex;
-  flex-wrap: wrap;        /* permite quebrar em telas pequenas */
-  gap: 40px;
-  margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 .bloco {
-  flex: 1;                 /* cada bloco ocupa o espaço disponível igualmente */
-  min-width: 300px;        /* garante tamanho mínimo confortável */
-  padding: 20px;
-  border-radius: 12px;
-  color:var(--cor-secundaria);
-  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
-  background-color: #1e1e1e;
-  box-sizing: border-box;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    color: var(--cor-secundaria);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+    background-color: #1e1e1e;
+    box-sizing: border-box;
 }
 
 .bloco ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .bloco li {
-  width: 100%;
-  padding: 20px 24px;
-  margin-bottom: 16px;
-  border: 1px solid var(--cor-terciaria);
-  border-radius: 12px;
-  background-color: var(--cor-primaria);
-  font-size: 1rem;
-  box-sizing: border-box;
-  display: block;
-  transition: background-color 0.3s ease, color 0.3s ease;/* animação suave */
-  cursor: pointer; /* muda o cursor para indicar que é interativo */
+    width: 100%;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    background-color: var(--cor-primaria);
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .bloco li:hover {
-  background-color: var(--cor-terciaria); /* muda o fundo ao passar o mouse */
-  color: var(--cor-secundaria);       /* mantém o texto legível */
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
 }
 
-/* aumenta os <li> quando a tela for grande */
+/* Responsividade */
 @media (min-width: 900px) {
-  .bloco li {
-    font-size: 1rem;
-    padding: 28px;
-  }
+    .bloco li {
+        font-size: 1rem;
+        padding: 28px;
+    }
 }
 
-/* em telas menores, empilha os blocos */
 @media (max-width: 700px) {
-
     .cabecalho {
         padding: 10%;
     }
-
     .cabecalho__menu {
         justify-content: center;
     }
-
-  .blocos-lado-a-lado {
-    flex-direction: column;
-  }
-
-   .apresentacao__conteudo {
+    .blocos-lado-a-lado {
+        flex-direction: column;
+    }
+    .apresentacao__conteudo {
         width: auto;
     }
 }
 
-.titulo_empresa
-{
-  color:var(--cor-quintaria); /* tom claro para títulos */
-  margin-top: 20px;
-  font-size: 1rem;
+/* Títulos adicionais */
+.titulo_empresa {
+    color: var(--cor-quintaria);
+    margin-top: 20px;
+    font-size: 1rem;
 }

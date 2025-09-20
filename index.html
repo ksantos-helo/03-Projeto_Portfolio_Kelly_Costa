@@ -9,15 +9,15 @@
 <body>
   
   <!-- Cabeçalho da página -->
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link"  href="about.html">Sobre mim</a>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+    </nav>
+  </header>
+
   <!-- Conteúdo principal -->
   <main class="apresentacao"> 
-    
     <!-- Card de perfil -->
     <aside class="card">
       <div class="card-header">
@@ -34,75 +34,85 @@
         <h2 class="titulo_links"><span aria-hidden="true">🔗</span> Acesse minhas redes sociais</h2>
         <h2 class="titulo_links"><span aria-hidden="true">🏅</span> Explore meus certificados</h2>
 
+        <!-- Links sociais -->
         <a href="https://www.linkedin.com/in/kellycristina-costa/" target="_blank" class="btn"> 
-          <img src="./assets/linkedin.png"> 
+          <img src="./assets/linkedin.png" alt="LinkedIn"> 
           LinkedIn
         </a>
+
         <a href="https://github.com/ksantos-helo" target="_blank" class="btn">
-          <img src="./assets/github.png"> 
+          <img src="./assets/github.png" alt="GitHub"> 
           GitHub
         </a>
-        <button class="btn" onclick="toggleDropdown()">
-        🏅Certificações
-        </button>
-        <div class="dropdown-content" id="certificados">
 
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/degree-logica-de-programacao-grupo9-one-951785/certificate" target="_blank">
-            <span class="curso-numero">Formação:</span><br> 
-            <span class="curso-nome">Iniciante em Programação</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-mergulhe-programacao-javascript/certificate" target="_blank">
-            <span class="curso-numero">Curso 1:</span><br> 
-            <span class="curso-nome">Lógica de Programação – Mergulhe no JavaScript</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-funcoes-listas/certificate" target="_blank">
-            <span class="curso-numero">Curso 2:</span><br> 
-            <span class="curso-nome">Lógica de Programação – Funções e Listas</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/git-github-compartilhando-colaborando-projetos/certificate" target="_blank">
-            <span class="curso-numero">Curso 3:</span><br> 
-            <span class="curso-nome">Git e GitHub – Compartilhando Projetos</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-challenge-amigo-secreto/certificate" target="_blank">
-            <span class="curso-numero">Curso 4:</span><br> 
-            <span class="curso-nome">Lógica de Programação – Challenge Amigo Secreto</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate" target="_blank">
-            <span class="curso-numero">Curso 5:</span><br> 
-            <span class="curso-nome">IA – Explorando Inteligência Artificial Generativa</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate" target="_blank">
-            <span class="curso-numero">Curso 6:</span><br> 
-            <span class="curso-nome">Engenharia de Prompt – Criando Prompts Eficazes</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-ambiente-arquivos-tags/certificate" target="_blank">
-            <span class="curso-numero">Curso 7:</span><br> 
-            <span class="curso-nome">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-classes-posicionamento-flexbox/certificate" target="_blank">
-            <span class="curso-numero">Curso 8:</span><br> 
-            <span class="curso-nome">HTML e CSS: Classes, posicionamento e Flexbox</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-cabecalho-footer-variaveis-css/certificate" target="_blank">
-            <span class="curso-numero">Curso 9:</span><br> 
-            <span class="curso-nome">HTML e CSS: cabeçalho, footer e variáveis CSS</span>
-          </a>
-
-          <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-responsividade-publicacao-projetos/certificate" target="_blank">
-            <span class="curso-numero">Curso 9:</span><br> 
-            <span class="curso-nome">HTML e CSS: trabalhando com responsividade e publicação de projetos</span>
-          </a>
-
+        <!-- Certificações Programação -->
+        <div class="dropdown-wrapper">
+          <input type="checkbox" id="certificadosProgramacao" class="dropdown-check">
+          <label for="certificadosProgramacao" class="btn">🏅 Certificações Programação</label>
+          <div class="dropdown-content">
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/degree-logica-de-programacao-grupo9-one-951785/certificate" target="_blank">
+              <span class="curso-numero">Formação:</span><br> 
+              <span class="curso-nome">Iniciante em Programação</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-mergulhe-programacao-javascript/certificate" target="_blank">
+              <span class="curso-numero">Curso 1:</span><br> 
+              <span class="curso-nome">Lógica de Programação – Mergulhe no JavaScript</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-funcoes-listas/certificate" target="_blank">
+              <span class="curso-numero">Curso 2:</span><br> 
+              <span class="curso-nome">Lógica de Programação – Funções e Listas</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/git-github-compartilhando-colaborando-projetos/certificate" target="_blank">
+              <span class="curso-numero">Curso 3:</span><br> 
+              <span class="curso-nome">Git e GitHub – Compartilhando Projetos</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/logica-programacao-challenge-amigo-secreto/certificate" target="_blank">
+              <span class="curso-numero">Curso 4:</span><br> 
+              <span class="curso-nome">Lógica de Programação – Challenge Amigo Secreto</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate" target="_blank">
+              <span class="curso-numero">Curso 5:</span><br> 
+              <span class="curso-nome">IA – Explorando Inteligência Artificial Generativa</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate" target="_blank">
+              <span class="curso-numero">Curso 6:</span><br> 
+              <span class="curso-nome">Engenharia de Prompt – Criando Prompts Eficazes</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-ambiente-arquivos-tags/certificate" target="_blank">
+              <span class="curso-numero">Curso 7:</span><br> 
+              <span class="curso-nome">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-classes-posicionamento-flexbox/certificate" target="_blank">
+              <span class="curso-numero">Curso 8:</span><br> 
+              <span class="curso-nome">HTML e CSS: Classes, posicionamento e Flexbox</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-cabecalho-footer-variaveis-css/certificate" target="_blank">
+              <span class="curso-numero">Curso 9:</span><br> 
+              <span class="curso-nome">HTML e CSS: cabeçalho, footer e variáveis CSS</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/html-css-responsividade-publicacao-projetos/certificate" target="_blank">
+              <span class="curso-numero">Curso 10:</span><br> 
+              <span class="curso-nome">HTML e CSS: trabalhando com responsividade e publicação de projetos</span>
+            </a>
+          </div>
         </div>
+
+        <!-- Certificações Desenvolvimento Pessoal -->
+        <div class="dropdown-wrapper">
+          <input type="checkbox" id="certificadosPessoal" class="dropdown-check">
+          <label for="certificadosPessoal" class="btn">🏅 Certificações Desenvolvimento Pessoal</label>
+          <div class="dropdown-content">
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/linkedin-profissionais-construa-marca-gere-oportunidades/certificate" target="_blank">
+              <span class="curso-numero">Curso 1:</span><br> 
+              <span class="curso-nome">LinkedIn: Construa sua marca e gere oportunidades</span>
+            </a>
+            <a href="https://cursos.alura.com.br/user/ksantoshelo/course/habitos-produtividade-metas-pessoais/certificate" target="_blank">
+              <span class="curso-numero">Curso 2:</span><br> 
+              <span class="curso-nome">Hábitos: da produtividade às metas pessoais</span>
+            </a>
+          </div>
+        </div>
+
       </nav>
     </aside>
 
@@ -112,13 +122,6 @@
   <footer class="rodape">  
     <p> Desenvolvido por <strong>Kelly Costa</strong> &copy; 2025</p>
   </footer>
-
-  <script>
-    function toggleDropdown() {
-      const dropdown = document.getElementById("certificados");
-      dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-    }
-  </script>
 
 </body>
 </html>
