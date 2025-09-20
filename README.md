@@ -10,11 +10,10 @@ Programa: **Oracle Next Education | Alura**
 
 ---
 
-## 🌐 Acesse Meus Perfis
+## 🌐 Acesse Meu Portfólio
 
-- 🔗 [LinkedIn](#)  
-- 💻 [Portfólio GitHub](#)  
-- 📄 [Certificações](#)
+- 🔗 [Portfólio - Kelly Costa](https://portfolio-kelly-costa.vercel.app/)
+
 
 ---
 
